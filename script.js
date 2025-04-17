@@ -1,32 +1,41 @@
-
 // Hamburger
 function toggleHam(x) {
-    x.classList.toggle("change");
-    let myMenu = document.getElementById('myMenu');
-    if (myMenu.className === 'menu'){
-        myMenu.className += ' menu-active'
-    }else {
-        myMenu.className ='menu'
-    }
+  x.classList.toggle("change");
+  let myMenu = document.getElementById("myMenu");
+  if (myMenu.className === "menu") {
+    myMenu.className += " menu-active";
+  } else {
+    myMenu.className = "menu";
   }
+}
 // Slider
 let currentSlide = 0;
-const slides = document.querySelectorAll('.slides img');
+const slides = document.querySelectorAll(".slides img");
 
 function showSlide(index) {
-    slides.forEach(slide => slide.classList.remove('active'));
-    slides[index].classList.add('active');
+  slides.forEach((slide) => slide.classList.remove("active"));
+  slides[index].classList.add("active");
 }
 
 function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
 }
 
 function prevSlide() {
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    showSlide(currentSlide);
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showSlide(currentSlide);
 }
 
 // Auto Slide
 setInterval(nextSlide, 5000);
+
+function openModal(title, descriptionHtml) {
+  document.getElementById("modal-title").textContent = title;
+  document.getElementById("modal-description").innerHTML = descriptionHtml;
+  document.getElementById("modal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+}

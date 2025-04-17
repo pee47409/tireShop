@@ -1,163 +1,480 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chaoyang</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
     <!-- Navbar -->
     <nav>
-        <div class="custom-container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <a href="index.html"><img src="img/main-chaoyang-logo.png" alt=""></a>
-                </div>
-                <ul class="menu" id="myMenu">
-                    <li><a href="index.html" >หน้าหลัก</a></li>
-                    <li><a href="about-us.html" >เกี่ยวกับเรา</a></li>
-                    <li><a href="products.html" >สินค้า/โปรโมชั่น</a></li>
-                    <li><a href="activity.html" >ข่าวสารและกิจกรรม</a></li>
-                    <li><a href="contact-us.html" >ติดต่อเรา</a></li>
-                </ul>
-                <div class="ham-menu" onclick="toggleHam(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                  </div>
-            </div>
-            
+      <div class="custom-container">
+        <div class="nav-wrapper">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="img/main-chaoyang-logo.png" alt=""
+            /></a>
+          </div>
+          <ul class="menu" id="myMenu">
+            <li><a href="index.html">หน้าหลัก</a></li>
+            <li><a href="about-us.html">เกี่ยวกับเรา</a></li>
+            <li><a href="products.html">สินค้า/โปรโมชั่น</a></li>
+            <li><a href="activity.html">ข่าวสารและกิจกรรม</a></li>
+            <li><a href="contact-us.html">ติดต่อเรา</a></li>
+          </ul>
+          <div class="ham-menu" onclick="toggleHam(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
         </div>
+      </div>
     </nav>
-<!-- Body1 -->
+    <!-- Body1 -->
     <div class="product">
-        <div class="product-maxwidth">
+      <div class="product-maxwidth">
         <h1>สินค้า/โปรโมชั่น</h1>
-            <div class="product-container">
-                <div class="product-card">
-                    <img src="img/ล้อยาง/h503.jpg" alt="Tire H-503">
-                    <h3>H-503</h3>
-                    <p class="price">฿1500</p>
-                </div>
+        <div class="product-container">
+          <div
+            class="product-card"
+            onclick="openModal('H-503', `
+          <p>ยางรุ่น H-503 เหมาะสำหรับการใช้งานทั่วไปบนถนนลาดยาง ให้การยึดเกาะที่ดี</p>
+          <table border='1' cellpadding='8' style='width: 100%; text-align: left; vertical-align: middle; text-align: center;'>
+            <tr>
+              <th>คุณสมบัติ</th><th>รายละเอียด</th>
+            </tr>
+            <tr>
+              <td>ขนาด</td>
+              <td>
+                <ul style='margin: 0; padding-left: 16px; list-style: none;'>
+                  <li>CY-H-503-90/90-12TL</li>
+                  <li>CY-H-503-100/90-12TL</li>
+                  <li>CY-H-503-110/90-12TL</li>
+                  <li>CY-H-503-110/70-12TL</li>
+                  <li>CY-H-503-120/70-12TL</li>
+                  <li>CY-H-503-130/70-12TL</li>
+                  <li>CY-H-503-80/90-14TL</li>
+                  <li>CY-H-503-90/90-14TL</li>
+                  <li>CY-H-503-100/80-14TL</li>
+                  <li>CY-H-503-100/90-14TL</li>
+                  <li>CY-H-503-110/90-14TL</li>
+                  <li>CY-H-503-120/70-14TL</li>        
+                </ul>
+              </td>
+            </tr>
+      
+          </table>
+        `)"
+          >
+            <div class="card-image">
+              <img src="img/ล้อยาง/h503.png" alt="Tire H-503" />
+            </div>
+            <div class="card-text">
+              <h3>H-503</h3>
+            </div>
+          </div>
 
-                <div class="product-card">
-                    <img src="img/ล้อยาง/h512.jpg" alt="Tire H-512">
-                    <h3>H-512</h3>
-                    <p class="price">฿1200</p>
-                </div>
+          <div
+            class="product-card"
+            onclick="openModal('H-512', `
+    <p>ยางรุ่น H-512 เหมาะสำหรับการใช้งานทั่วไปบนถนนลาดยาง ให้การยึดเกาะที่ดี</p>
+    <table border='1' cellpadding='8' style='width: 100%; text-align: left; vertical-align: middle; text-align: center;'>
+      <tr>
+        <th>คุณสมบัติ</th><th>รายละเอียด</th>
+      </tr>
+      <tr>
+        <td>ขนาด</td>
+        <td>
+          <ul style='margin: 0; padding-left: 16px; list-style: none;'>
+            <li>CY-H-512-60/100-17TT</li>
+            <li>CY-H-512-70/90-17TT</li>
+            <li>CY-H-512-80/90-17TT</li>
+          </ul>
+        </td>
+      </tr>
 
-                <div class="product-card">
-                    <img src="img/ล้อยาง/h571.jpg" alt="Tire H-571">
-                    <h3>H-571</h3>
-                    <p class="price">฿1800</p>
-                </div>
+    </table>
+  `)"
+          >
+            <div class="card-image">
+              <img src="img/ล้อยาง/h512.png" alt="Tire H-512" />
+            </div>
+            <div class="card-text">
+              <h3>H-512</h3>
+            </div>
+          </div>
 
-                <div class="product-card">
-                    <img src="img/ล้อยาง/h606.jpg" alt="Tire H-606">
-                    <h3>H-606</h3>
-                    <p class="price">฿1800</p>
-                </div>
+          <div
+            class="product-card"
+            onclick="openModal('H-571', `
+          <p>ยางรุ่น H-571 เหมาะสำหรับการใช้งานทั่วไปบนถนนลาดยาง ให้การยึดเกาะที่ดี</p>
+          <table border='1' cellpadding='8' style='width: 100%; text-align: left; vertical-align: middle; text-align: center;'>
+            <tr>
+              <th>คุณสมบัติ</th><th>รายละเอียด</th>
+            </tr>
+            <tr>
+              <td>ขนาด</td>
+              <td>
+                <ul style='margin: 0; padding-left: 16px; list-style: none;'>
+                  <li>CY-H-571-110/70-13TL</li>
+                  <li>CY-H-571-130/70-13TL</li>
+                  <li>CY-H-571-90/80-14TL</li>
+                  <li>CY-H-571-80/90-14TL</li>
+                  <li>CY-H-571-90/90-14TL</li>
+                  <li>CY-H-571-110/70-14TL</li>
+                  <li>CY-H-571-120/70-14TL</li>
+                  <li>CY-H-571-100/80-14TL</li>
 
-                <div class="product-card">
-                    <img src="img/ล้อยาง/h615.jpg" alt="Tire H-615">
-                    <h3>H-615</h3>
-                    <p class="price">฿1800</p>
-                </div>
+                </ul>
+              </td>
+            </tr>
+      
+          </table>
+        `)"
+          >
+            <div class="card-image">
+              <img src="img/ล้อยาง/h571.png" alt="Tire H-571" />
+            </div>
+            <div class="card-text">
+              <h3>H-571</h3>
+            </div>
+          </div>
 
-                <div class="product-card">
-                    <img src="img/ล้อยาง/h621.jpg" alt="Tire H-621">
-                    <h3>H-621</h3>
-                    <p class="price">฿1800</p>
-                </div>
+          <div
+            class="product-card"
+            onclick="openModal('H-606', `
+          <p>ยางรุ่น H-606 เหมาะสำหรับการใช้งานทั่วไปบนถนนลาดยาง ให้การยึดเกาะที่ดี</p>
+          <table border='1' cellpadding='8' style='width: 100%; text-align: left; vertical-align: middle; text-align: center;'>
+            <tr>
+              <th>คุณสมบัติ</th><th>รายละเอียด</th>
+            </tr>
+            <tr>
+              <td>ขนาด</td>
+              <td>
+                <ul style='margin: 0; padding-left: 16px; list-style: none;'>
+                  <li>CY-H-606-250-17TT</li>        
+                </ul>
+              </td>
+            </tr>
+      
+          </table>
+        `)"
+          >
+            <div class="card-image">
+              <img src="img/ล้อยาง/h606.png" alt="Tire H-606" />
+            </div>
+            <div class="card-text">
+              <h3>H-606</h3>
+            </div>
+          </div>
 
-                <div class="product-card">
-                    <img src="img/ล้อยาง/h776.jpg" alt="Tire H-776">
-                    <h3>H-776</h3>
-                    <p class="price">฿1800</p>
-                </div>
+          <div
+            class="product-card"
+            onclick="openModal('H-615', `
+          <p>ยางรุ่น H-615 เหมาะสำหรับการใช้งานทั่วไปบนถนนลาดยาง ให้การยึดเกาะที่ดี</p>
+          <table border='1' cellpadding='8' style='width: 100%; text-align: left; vertical-align: middle; text-align: center;'>
+            <tr>
+              <th>คุณสมบัติ</th><th>รายละเอียด</th>
+            </tr>
+            <tr>
+              <td>ขนาด</td>
+              <td>
+                <ul style='margin: 0; padding-left: 16px; list-style: none;'>
+                  <li>CY-H-615-225-17TT</li>        
+                </ul>
+              </td>
+            </tr>
+      
+          </table>
+        `)"
+          >
+            <div class="card-image">
+              <img src="img/ล้อยาง/h615.png" alt="Tire H-615" />
+            </div>
+            <div class="card-text">
+              <h3>H-615</h3>
+            </div>
+          </div>
 
-                <div class="product-card">
-                    <img src="img/ล้อยาง/h780.jpg" alt="Tire H-780">
-                    <h3>H-780</h3>
-                    <p class="price">฿1800</p>
-                </div>
+          <div
+            class="product-card"
+            onclick="openModal('H-621', `
+          <p>ยางรุ่น H-621 เหมาะสำหรับการใช้งานทั่วไปบนถนนลาดยาง ให้การยึดเกาะที่ดี</p>
+          <table border='1' cellpadding='8' style='width: 100%; text-align: left; vertical-align: middle; text-align: center;'>
+            <tr>
+              <th>คุณสมบัติ</th><th>รายละเอียด</th>
+            </tr>
+            <tr>
+              <td>ขนาด</td>
+              <td>
+                <ul style='margin: 0; padding-left: 16px; list-style: none;'>
+                  <li>CY-H-621-250-17TT</li>        
+                  <li>CY-H-621-275-17TT</li>        
+                  <li>CY-H-621-300-17TT</li>        
+                  <li>CY-H-621-300-18TT</li>        
+                </ul>
+              </td>
+            </tr>
+      
+          </table>
+        `)"
+          >
+            <div class="card-image">
+              <img src="img/ล้อยาง/h621.png" alt="Tire H-621" />
+            </div>
+            <div class="card-text">
+              <h3>H-621</h3>
+            </div>
+          </div>
 
-                <div class="product-card">
-                    <img src="img/ล้อยาง/h791.jpg" alt="Tire H-791">
-                    <h3>H-791</h3>
-                    <p class="price">฿1800</p>
-                </div>
-                <div class="product-card">
-                    <img src="img/ล้อยาง/h881.jpg" alt="Tire H-881">
-                    <h3>H-881</h3>
-                    <p class="price">฿1800</p>
-                </div>
+          <div
+            class="product-card"
+            onclick="openModal('H-776', `
+          <p>ยางรุ่น H-776 เหมาะสำหรับการใช้งานทั่วไปบนถนนลาดยาง ให้การยึดเกาะที่ดี</p>
+          <table border='1' cellpadding='8' style='width: 100%; text-align: left; vertical-align: middle; text-align: center;'>
+            <tr>
+              <th>คุณสมบัติ</th><th>รายละเอียด</th>
+            </tr>
+            <tr>
+              <td>ขนาด</td>
+              <td>
+                <ul style='margin: 0; padding-left: 16px; list-style: none;'>
+                  <li>CY-H-776-70/90-14TT</li>        
+                  <li>CY-H-776-80/90-14TT</li>        
+                  <li>CY-H-776-90/90-14TT</li>        
+                  <li>CY-H-776-50/100-17TT</li>        
+                  <li>CY-H-776-60/90-17TT</li>        
+                  <li>CY-H-776-70/90-17TT</li>        
+                  <li>CY-H-776-80/90-17TT</li>                   
+                </ul>
+              </td>
+            </tr>
+      
+          </table>
+        `)"
+          >
+            <div class="card-image">
+              <img src="img/ล้อยาง/h776.png" alt="Tire H-776" />
+            </div>
+            <div class="card-text">
+              <h3>H-776</h3>
+            </div>
+          </div>
 
-                <div class="product-card">
-                    <img src="img/ล้อยาง/h888.jpg" alt="Tire H-888">
-                    <h3>H-888</h3>
-                    <p class="price">฿1800</p>
-                </div>
+          <div
+            class="product-card"
+            onclick="openModal('H-780', `
+          <p>ยางรุ่น H-780 เหมาะสำหรับการใช้งานทั่วไปบนถนนลาดยาง ให้การยึดเกาะที่ดี</p>
+          <table border='1' cellpadding='8' style='width: 100%; text-align: left; vertical-align: middle; text-align: center;'>
+            <tr>
+              <th>คุณสมบัติ</th><th>รายละเอียด</th>
+            </tr>
+            <tr>
+              <td>ขนาด</td>
+              <td>
+                <ul style='margin: 0; padding-left: 16px; list-style: none;'>
+                  <li>CY-H-780-70/90-17TT</li>        
+                  <li>CY-H-780-80/90-17TT</li>                    
+                </ul>
+              </td>
+            </tr>
+      
+          </table>
+        `)"
+          >
+            <div class="card-image">
+              <img src="img/ล้อยาง/h780.png" alt="Tire H-780" />
+            </div>
+            <div class="card-text">
+              <h3>H-780</h3>
+            </div>
+          </div>
 
-                <div class="product-card">
-                    <img src="img/ล้อยาง/h920.jpg" alt="Tire H-920">
-                    <h3>H-780</h3>
-                    <p class="price">฿1800</p>
-                </div>
+          <div
+            class="product-card"
+            onclick="openModal('H-791', `
+          <p>ยางรุ่น H-791 เหมาะสำหรับการใช้งานทั่วไปบนถนนลาดยาง ให้การยึดเกาะที่ดี</p>
+          <table border='1' cellpadding='8' style='width: 100%; text-align: left; vertical-align: middle; text-align: center;'>
+            <tr>
+              <th>คุณสมบัติ</th><th>รายละเอียด</th>
+            </tr>
+            <tr>
+              <td>ขนาด</td>
+              <td>
+                <ul style='margin: 0; padding-left: 16px; list-style: none;'>
+                  <li>CY-H-791-200-17TT</li>        
+                  <li>CY-H-791-225-17TT</li>        
+                  <li>CY-H-791-250-17TT</li>        
+                  <li>CY-H-791-275-17TT</li>        
+                                   
+                </ul>
+              </td>
+            </tr>
+      
+          </table>
+        `)"
+          >
+            <div class="card-image">
+              <img src="img/ล้อยาง/h791.png" alt="Tire H-791" />
+            </div>
+            <div class="card-text">
+              <h3>H-791</h3>
+            </div>
+          </div>
+          <div
+            class="product-card"
+            onclick="openModal('H-881', `
+          <p>ยางรุ่น H-881 เหมาะสำหรับการใช้งานทั่วไปบนถนนลาดยาง ให้การยึดเกาะที่ดี</p>
+          <table border='1' cellpadding='8' style='width: 100%; text-align: left; vertical-align: middle; text-align: center;'>
+            <tr>
+              <th>คุณสมบัติ</th><th>รายละเอียด</th>
+            </tr>
+            <tr>
+              <td>ขนาด</td>
+              <td>
+                <ul style='margin: 0; padding-left: 16px; list-style: none;'>
+                  <li>CY-H-881-225-17TT</li>        
+                  <li>CY-H-881-250-17TT</li>        
+                  <li>CY-H-881-275-17TT</li>                                                  
+                </ul>
+              </td>
+            </tr>
+      
+          </table>
+        `)"
+          >
+            <div class="card-image">
+              <img src="img/ล้อยาง/h881.png" alt="Tire H-881" />
+            </div>
+            <div class="card-text">
+              <h3>H-881</h3>
+            </div>
+          </div>
 
-                <div class="product-card">
-                    <img src="img/ล้อยาง/h969.jpg" alt="Tire H-969">
-                    <h3>H-969</h3>
-                    <p class="price">฿1800</p>
-                </div>
+          <div
+            class="product-card"
+            onclick="openModal('H-888', `
+          <p>ยางรุ่น H-888 เหมาะสำหรับการใช้งานทั่วไปบนถนนลาดยาง ให้การยึดเกาะที่ดี</p>
+          <table border='1' cellpadding='8' style='width: 100%; text-align: left; vertical-align: middle; text-align: center;'>
+            <tr>
+              <th>คุณสมบัติ</th><th>รายละเอียด</th>
+            </tr>
+            <tr>
+              <td>ขนาด</td>
+              <td>
+                <ul style='margin: 0; padding-left: 16px; list-style: none;'>
+                  <li>CY-H-888-225-17TT</li>                                                         
+                  <li>CY-H-888-250-17TT</li>                                                         
+                  <li>CY-H-888-275-17TT</li>                                                         
+                </ul>
+              </td>
+            </tr>
+      
+          </table>
+        `)"
+          >
+            <div class="card-image">
+              <img src="img/ล้อยาง/h888.png" alt="Tire H-888" />
+            </div>
+            <div class="card-text">
+              <h3>H-888</h3>
+            </div>
+          </div>
 
-                <div class="product-card">
-                    <img src="img/ล้อยาง/h991.jpg" alt="Tire H-991">
-                    <h3>H-991</h3>
-                    <p class="price">฿1800</p>
-                </div>
+          <div class="product-card">
+            <div class="card-image">
+              <img src="img/ล้อยาง/h920.png" alt="Tire H-920" />
+            </div>
+            <div class="card-text">
+              <h3>H-780</h3>
+            </div>
+          </div>
 
+          <div class="product-card">
+            <div class="card-image">
+              <img src="img/ล้อยาง/h969.png" alt="Tire H-969" />
+            </div>
+            <div class="card-text">
+              <h3>H-969</h3>
+            </div>
+          </div>
 
+          <div
+            class="product-card"
+            onclick="openModal('H-991', `
+          <p>ยางรุ่น H-991 เหมาะสำหรับการใช้งานทั่วไปบนถนนลาดยาง ให้การยึดเกาะที่ดี</p>
+          <table border='1' cellpadding='8' style='width: 100%; text-align: left; vertical-align: middle; text-align: center;'>
+            <tr>
+              <th>คุณสมบัติ</th><th>รายละเอียด</th>
+            </tr>
+            <tr>
+              <td>ขนาด</td>
+              <td>
+                <ul style='margin: 0; padding-left: 16px; list-style: none;'>
+                  <li>CY-H-991-50/100-17TT</li>                                                                                                                 
+                  <li>CY-H-991-60/90-17TT</li>                                                                                                                 
+                  <li>CY-H-991-70/90-17TT</li>                                                                                                                 
+                  <li>CY-H-991-80/90-17TT</li>                                                                                                                 
+                </ul>
+              </td>
+            </tr>
+      
+          </table>
+        `)"
+          >
+            <div class="card-image">
+              <img src="img/ล้อยาง/h991.png" alt="Tire H-991" />
+            </div>
+            <div class="card-text">
+              <h3>H-991</h3>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-        
-  </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer>
-        
-        <div class="footer-wrapper">
-            <div class="vPrime">
-                <img src="img/New folder/evPrime.jpg" alt="">
-                <p>บริษัท อีวี ไพร์ม จำกัด EV PRIME CO., LTD.</p>
-            </div>
-                <div class="chaoyang-logo">
-                    <a href="index.html"><img src="img/footer-chaoyang.png" alt=""></a>
-                    
-                </div>
-                        <div class="footer-menu">
-                            <ul class="left-footer-menu">
-                                <li><a href="index.html" >หน้าหลัก</a></li>
-                                <li><a href="about-us.html" >เกี่ยวกับเรา</a></li>
-                                <li><a href="products.html" >สินค้า/โปรโมชั่น</a></li>
-                            </ul>
-                            <ul class="right-footer-menu">
-                                <li><a href="activity.html" >ข่าวสารและกิจกรรม</a></li>
-                                <li><a href="contact-us.html" >ติดต่อเรา</a></li>
-                            </ul>
-                            <div class="tel">
-                                <h1>095-553-5388</h1>
-                            </div>
-                        </div>
-                            
+      <div class="footer-wrapper">
+        <div class="vPrime">
+          <img src="img/New folder/evPrime.jpg" alt="" />
+          <p>บริษัท อีวี ไพร์ม จำกัด EV PRIME CO., LTD.</p>
         </div>
-            
+        <div class="chaoyang-logo">
+          <a href="index.html"><img src="img/footer-chaoyang.png" alt="" /></a>
+        </div>
+        <div class="footer-menu">
+          <ul class="left-footer-menu">
+            <li><a href="index.html">หน้าหลัก</a></li>
+            <li><a href="about-us.html">เกี่ยวกับเรา</a></li>
+            <li><a href="products.html">สินค้า/โปรโมชั่น</a></li>
+          </ul>
+          <ul class="right-footer-menu">
+            <li><a href="activity.html">ข่าวสารและกิจกรรม</a></li>
+            <li><a href="contact-us.html">ติดต่อเรา</a></li>
+          </ul>
+          <div class="tel">
+            <h1>095-553-5388</h1>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
-

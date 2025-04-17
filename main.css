@@ -1,708 +1,735 @@
-
 /* Ham-menu */
 .ham-menu {
-    display: inline-block;
-    cursor: pointer;
-    position: absolute;
-    right: 1rem;
-    
-  }
-  
-  .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #ffffff;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-  
- 
-  .change .bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
-  }
-  
-  
-  .change .bar2 {opacity: 0;}
-  
- 
-  .change .bar3 {
-    transform: translate(0, -11px) rotate(45deg);
-  }
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+}
 
-  /* Navbar */
-  
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+/* Navbar */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: "Prompt", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  font-family: "Prompt", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.custom-container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #e72419;
+  padding: 10px;
+  width: 100%;
+
+  left: 0;
+  right: 0;
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin-right: 5rem;
+  gap: 5rem;
+
+  li {
+    margin-left: 20px;
+    text-align: center;
+    margin: 1.5rem 0;
+    padding: 1rem;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
   }
-  
-.custom-container{
-    max-width: 1500px;
-    margin: 0 auto;
-}
-
-nav{
-    background-color: #E72419;
-    padding: 10px;
-    width: 100%;
-   
-    left: 0;
-    right: 0;
-}
-.nav-wrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-    
-}
-
-.menu{
-    display: flex;
-    list-style: none;
-    margin-right: 5rem;
-    gap: 5rem;
-
-    li{
-        margin-left: 20px;
-        text-align: center;
-        margin: 1.5rem 0;
-        padding: 1rem;
-        
-        a{
-        
-        color: white;
-        text-decoration: none;
-    }
-    }
-    li:hover{
-        background-color: tomato;
-        transition: 0.3s;
-    }
+  li:hover {
+    background-color: tomato;
+    transition: 0.3s;
+  }
 }
 .logo img {
-    max-width: 300px; /* ขนาดสูงสุดของโลโก้ */
-    width: 100%; 
-    height: auto;
-    min-width: 150px;
+  max-width: 300px; /* ขนาดสูงสุดของโลโก้ */
+  width: 100%;
+  height: auto;
+  min-width: 150px;
 }
-
-
-
 
 @media screen and (min-width: 1200px) {
-    .ham-menu{
-        display: none;
-    }
-    
+  .ham-menu {
+    display: none;
+  }
 }
 @media screen and (max-width: 1200px) {
-    .menu{
-        display: none;
-        width: 100%;
+  .menu {
+    display: none;
+    width: 100%;
 
-        li{
-            margin: 1.5rem 0;
-            padding: 1rem;
-           
-        }
-        
+    li {
+      margin: 1.5rem 0;
+      padding: 1rem;
     }
-    .nav-wrapper{
-        padding: 1rem;
-        height: auto;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-        
-    .logo img {
-        width: 100%;  /* ให้รูปยืดขนาดตามความกว้างของ container */
-        max-width: 200px; /* กำหนดขนาดสูงสุดของรูป (ปรับตามที่ต้องการ) */
-        height: auto; /* รักษาสัดส่วนของรูป */
-        min-width: 100px;
-    }
-    .menu-active{
-        display: block ;
-    }
+  }
+  .nav-wrapper {
+    padding: 1rem;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo img {
+    width: 100%; /* ให้รูปยืดขนาดตามความกว้างของ container */
+    max-width: 200px; /* กำหนดขนาดสูงสุดของรูป (ปรับตามที่ต้องการ) */
+    height: auto; /* รักษาสัดส่วนของรูป */
+    min-width: 100px;
+  }
+  .menu-active {
+    display: block;
+  }
 }
 
 /* Chaoyang logo Navbar,Footer*/
 .logo img:hover {
-    border: 5px solid #000000; 
-    transition: border 0.5s ease;
+  border: 5px solid #000000;
+  transition: border 0.5s ease;
 }
 .chaoyang-logo img:hover {
-    border: 5px solid #ffffff; 
-    transition: border 0.5s ease;
-
+  border: 5px solid #ffffff;
+  transition: border 0.5s ease;
 }
 
 /* Footer */
 
 footer {
-    display: flex;
-    position: relative;
-    height: auto;
-    background-color: black;
-    color: white;
-    padding: 2rem 0;
-    justify-content: center;
-    margin-top: auto;
+  display: flex;
+  position: relative;
+  height: auto;
+  background-color: black;
+  color: white;
+  padding: 2rem 0;
+  justify-content: center;
+  margin-top: auto;
 }
 
 .footer-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; /* ป้องกันเมนูออกนอกจอ */
-    width: 100%;
-    max-width: 1140px;
-    margin: 0 auto;
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* ป้องกันเมนูออกนอกจอ */
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
 }
-.vPrime{
-    order: 2;
+.vPrime {
+  order: 2;
 
-    .vPrime :hover{
-        transform: scale(1.1);
-    }
-}
-.vPrime :hover{
+  .vPrime :hover {
     transform: scale(1.1);
+  }
 }
-.tel{
-    order: 1;
+.vPrime :hover {
+  transform: scale(1.1);
+}
+.tel {
+  order: 1;
 }
 .vPrime img {
-    max-width: 100%;
-    width: 200px;
-    height: auto;
-    object-fit: contain; /* ป้องกันภาพผิดสัดส่วน */
+  max-width: 100%;
+  width: 200px;
+  height: auto;
+  object-fit: contain; /* ป้องกันภาพผิดสัดส่วน */
 }
 
 .chaoyang-logo {
-    margin: 0 2rem;
-    text-align: left;
-    
-    justify-items: center;
+  margin: 0 2rem;
+  text-align: left;
+
+  justify-items: center;
 }
 
 .chaoyang-logo img {
-    max-width: 200px;          /* ปรับขนาดภาพให้ใหญ่ขึ้น */
-    width: 100%;               /* ให้รองรับหน้าจอเล็ก */
-    height: auto;    
-    display: block;   
-    
+  max-width: 200px; /* ปรับขนาดภาพให้ใหญ่ขึ้น */
+  width: 100%; /* ให้รองรับหน้าจอเล็ก */
+  height: auto;
+  display: block;
 }
 
 .footer-menu {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 .footer-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-menu li {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .footer-menu a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
-.footer-menu li:hover{
-    scale: 1.2;
+.footer-menu li:hover {
+  scale: 1.2;
 }
 .tel h1 {
-    margin-right: 2rem;
+  margin-right: 2rem;
 }
 .tel h1:hover {
-    scale: 1.2;
+  scale: 1.2;
 }
 /* 📌 Responsive สำหรับหน้าจอเล็ก */
 @media screen and (max-width: 1200px) {
-    .footer-wrapper {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+  .footer-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .footer-menu {
-        flex-direction: column;
-        gap: 0rem;
-    }
+  .footer-menu {
+    flex-direction: column;
+    gap: 0rem;
+  }
 
-    .tel h1 {
-        margin-right: 0;
-        font-size: 1.5rem;
-    }
+  .tel h1 {
+    margin-right: 0;
+    font-size: 1.5rem;
+  }
 
-    .chaoyang-logo {
-        margin: 1rem 0;
-    }
-    .vPrime{
-        margin-top: 2rem;
-             
-    }
+  .chaoyang-logo {
+    margin: 1rem 0;
+  }
+  .vPrime {
+    margin-top: 2rem;
+  }
 
-    .slider button{
-        display: none;
-    }
-
+  .slider button {
+    display: none;
+  }
 }
 /* Video */
 
 .responsive-video {
-    width: 100%;
-    max-width: 1000px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* ใส่เงา */
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* ใส่เงา */
 }
-.body2-wrapper{
-    video {
-        margin-top: 5rem;
-    }
+.body2-wrapper {
+  video {
+    margin-top: 5rem;
+  }
 }
 
 /* Slider */
 
 .slider {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    height: 700px; /* กำหนดความสูงของสไลด์ */
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 700px; /* กำหนดความสูงของสไลด์ */
+  overflow: hidden;
 }
 
 .slides img {
-    width: 100%;  /* ยืดสุดความกว้าง */
-    height: auto; /* สูงสุด container */
-    object-fit: cover; /* ตัดส่วนเกิน และรักษาสัดส่วน */
-    object-position: bottom; /* โฟกัสตรงกลางของภาพ */
-    display: none;
-    transition: opacity 1s ease;
+  width: 100%; /* ยืดสุดความกว้าง */
+  height: auto; /* สูงสุด container */
+  object-fit: cover; /* ตัดส่วนเกิน และรักษาสัดส่วน */
+  object-position: bottom; /* โฟกัสตรงกลางของภาพ */
+  display: none;
+  transition: opacity 1s ease;
 }
 
 .slides img.active {
-    display: block;
+  display: block;
 }
 
 button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 20px;
-    z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 10;
 }
-.prev { left: 10x; }
-.next { right: 10px; }
+.prev {
+  left: 10x;
+}
+.next {
+  right: 10px;
+}
 @media screen and (max-width: 1200px) {
-    .slider {
-        height: auto; /* ลดความสูงของ slider เมื่อหน้าจอลดลง */
-    }
-
+  .slider {
+    height: auto; /* ลดความสูงของ slider เมื่อหน้าจอลดลง */
+  }
 }
 /* Home-Body2 */
 .body2::before {
-    content: "";
-    position: absolute;  /* เพิ่มตำแหน่งของ pseudo-element */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("img/New folder/bg-image.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;  /* เพื่อให้ภาพขยายเต็มพื้นที่ */
-    opacity: 0.5; /* ตั้งค่าให้ภาพมีความโปร่งแสง */
-    z-index: -1; /* ทำให้พื้นหลังอยู่หลังเนื้อหา */
+  content: "";
+  position: absolute; /* เพิ่มตำแหน่งของ pseudo-element */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("img/New folder/bg-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; /* เพื่อให้ภาพขยายเต็มพื้นที่ */
+  opacity: 0.5; /* ตั้งค่าให้ภาพมีความโปร่งแสง */
+  z-index: -1; /* ทำให้พื้นหลังอยู่หลังเนื้อหา */
 }
 
-.body2{
-     display: flex;
-    justify-content: center;  /* จัดให้อยู่กลางตามแนวนอน */
-    align-items: center;      /* จัดให้อยู่กลางตามแนวตั้ง */
-    min-height: 100vh;        /* ทำให้ความสูงของ body2 เต็มหน้าจอ */
-    height: auto;             /* หากเนื้อหามากเกินไปให้ขยายตาม */
-    flex-direction: column;   /* เพิ่มการจัดเรียงในแนวตั้ง */
-    padding-bottom: 5rem;     /* ป้องกันเนื้อหาชนกับ footer */
-    position: relative;       /* กำหนดตำแหน่งให้ถูกต้อง */
+.body2 {
+  display: flex;
+  justify-content: center; /* จัดให้อยู่กลางตามแนวนอน */
+  align-items: center; /* จัดให้อยู่กลางตามแนวตั้ง */
+  min-height: 100vh; /* ทำให้ความสูงของ body2 เต็มหน้าจอ */
+  height: auto; /* หากเนื้อหามากเกินไปให้ขยายตาม */
+  flex-direction: column; /* เพิ่มการจัดเรียงในแนวตั้ง */
+  padding-bottom: 5rem; /* ป้องกันเนื้อหาชนกับ footer */
+  position: relative; /* กำหนดตำแหน่งให้ถูกต้อง */
 
-    .body2-wrapper{
-     
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
+  .body2-wrapper {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 
-        .new-product-text{
-            font-size: 2rem;
-            color: rgb(0, 0, 0);
-            text-align: center;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            :hover{
-                transform: scale(1.1);
-            }
-        }
-        .product-box{
-            display: flex;
-            align-items: center;
-            width: 500px;
-            gap: 5rem;
-            margin-bottom: 2rem;
-            justify-content: center;
-            
-            
-            img{
-                max-width: 400px;
-                min-width: 100px;
-                object-fit: cover;
-                transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
-                border-radius: 1rem;
-            }
-            img:hover {
-                transform: scale(1.1); /* ขยายรูปขึ้น 10% เมื่อเมาส์ชี้ */
-                border: 2px solid #222121;
-                transition: border 0.2s ease;
-                border-radius: 1rem;
-            }
-        }
+    .new-product-text {
+      font-size: 2rem;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+      :hover {
+        transform: scale(1.1);
+      }
     }
+    .product-box {
+      display: flex;
+      align-items: center;
+      width: 500px;
+      gap: 5rem;
+      margin-bottom: 2rem;
+      justify-content: center;
+
+      img {
+        max-width: 400px;
+        min-width: 100px;
+        object-fit: cover;
+        transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+        border-radius: 1rem;
+      }
+      img:hover {
+        transform: scale(1.1); /* ขยายรูปขึ้น 10% เมื่อเมาส์ชี้ */
+        border: 2px solid #222121;
+        transition: border 0.2s ease;
+        border-radius: 1rem;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1200px) {
-    .body2-wrapper{
-        .product-box{
-            flex-direction: column;
-        }
+  .body2-wrapper {
+    .product-box {
+      flex-direction: column;
     }
+  }
 }
-
-
 
 /* About-us */
 
-.about{
-    padding: 4rem 2rem;
-    margin: 0 auto;
-    background-color: #F0F0F0;
+.about {
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  background-color: #f0f0f0;
 
-        h1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 3rem;
-        color: #333;
-        margin-bottom: 2rem;
-      }
-      
-        h2{
-            margin-top: 2rem;
-            margin-left: 5rem;
-            font-size: 2rem;
-            color: #4b4b4b;
-        }
-        p{
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: bold;     
-            
-        }
-        ul{
-            margin-top: 2.5rem;
-            list-style: none;
-            margin-left: 5rem; 
-        }
-        li{
-            
-            
-            margin: 1rem 0;
-            font-size: 1.5rem;
-            color: #222121;
-            text-decoration: none !important;;
-        }
-        ul li::before {
-            content: "•"; /* ใช้จุดเป็น content */
-            color: rgb(0, 0, 0); /* เปลี่ยนสี */
-            font-size: 30px; /* ขนาดใหญ่ขึ้น */
-            margin-right: 2rem; /* ระยะห่างจากข้อความ */
-            
-          }
-        img{    
-            display: block; /* ทำให้ img เป็น block element */
-            margin: 2rem auto; /* จัดกึ่งกลางแนวนอน */
-            max-width: 100%; /* ป้องกันภาพล้นหน้าจอ */
-            
-        }
-
-    }
-    /* Products */
-
-.product{
-    padding: 4rem 2rem;
-    
-    margin: 0 auto;
-    background-color: #F0F0F0;
-    h1{
-        font-size: 5rem; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-    }
-    .product-maxwidth{
-        max-width: 2500px;
-        margin: 0 auto;
-        
-    }
-}    
-.product-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 5rem;
-    padding: 20px;
-    width: 100%;
-    max-width: 2000px;
-  }
-  
-  /* Product Card Styles */
- .product h1 {
-    font-size: 3rem;
-    color: #333;
-    margin-bottom: 2rem;
-  }
-  
-  .product-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .product-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .product-card img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-  }
-  
-  .product-card h3 {
-    font-size: 1.5rem;
-    color: #333;
-    margin: 1rem 0;
-  }
-  
-  .product-card .price {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #e74c3c;
-    margin-bottom: 1rem;
-  }
-  /* ข่าวสารและกิจกรรม */
-  .news {
-    background-color: #F0F0F0;
-    padding: 4rem 2rem;
+  h1 {
     display: flex;
     justify-content: center;
-  }
-  
-  .news-wrapper {
-    max-width: 1000px;
-    width: 100%;
-  }
-  
-  .news h1 {
+    align-items: center;
     font-size: 3rem;
-    text-align: center;
     color: #333;
     margin-bottom: 2rem;
   }
-  
-  /* กล่องหลักของเนื้อหาข่าว */
-  .news-content {
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    border-radius: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-  }
-  
-  /* ด้านซ้ายของเนื้อหา */
-  .news-left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    flex: 1;
-  }
-  
-  .news-facebook-logo {
-    border-radius: 4rem;
-    width: 100%;
-    max-width: 400px;
-    margin-top: 1rem;
-  }
-  
-  .news-left h3 {
-    margin-top: 1rem;
+
+  h2 {
+    margin-top: 2rem;
+    margin-left: 5rem;
     font-size: 2rem;
     color: #4b4b4b;
+  }
+  p {
     text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
   }
-  
-  .news-left a {
-    margin-top: 0.5rem;
-    color: #1a0dab;
-    text-align: center;
-    word-break: break-word;
-    font-size: 1.1rem;
+  ul {
+    margin-top: 2.5rem;
+    list-style: none;
+    margin-left: 5rem;
   }
-  
-  /* ด้านขวาของเนื้อหา */
-  .news-right {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-  }
-  
-  .news-image {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 1rem;
-    object-fit: cover;
-  }
-  
-  /* ---------- Responsive ---------- */
-  @media (min-width: 768px) {
-    .news-content {
-      flex-direction: row;
-    }
-  
-    .news-left, .news-right {
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .news-left h3 {
-      font-size: 2.5rem;
-    }
-  
-    .news-left a {
-      font-size: 1.2rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .news-left h3 {
-      font-size: 1.5rem;
-    }
-  
-    .news-left a {
-      font-size: 1rem;
-    }
-  
-    .news-image {
-      max-width: 100%;
-    }
-  
-    .news-facebook-logo {
-      max-width: 100%;
-    }
-  }
-  
-  /* Contact-us */
-  .contact {
-    background-color: #f0f0f0;
-    padding: 4rem 2rem;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .contact-wrapper {
-    max-width: 1000px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  .contact h1 {
-    font-size: 3rem;
-    color: #333;
-    margin-bottom: 2rem;
-  }
-  
-  .contact-card {
-    background-color: #fff;
-    border-radius: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-  }
-  
-  .facebook-cover {
-    width: 100%;
-    border-radius: 1rem;
-    object-fit: cover;
-    margin-bottom: 2rem;
-  }
-  
-  .contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: flex-start;
-    padding-left: 1rem;
-  }
-  
-  .contact-item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  li {
+    margin: 1rem 0;
     font-size: 1.5rem;
-    color: #333;
+    color: #222121;
+    text-decoration: none !important;
   }
-  
-  /* กล่องห่อ icon */
-  .icon-wrapper {
-    width: 40px;
-    height: 40px;
+  ul li::before {
+    content: "•"; /* ใช้จุดเป็น content */
+    color: rgb(0, 0, 0); /* เปลี่ยนสี */
+    font-size: 30px; /* ขนาดใหญ่ขึ้น */
+    margin-right: 2rem; /* ระยะห่างจากข้อความ */
+  }
+  img {
+    display: block; /* ทำให้ img เป็น block element */
+    margin: 2rem auto; /* จัดกึ่งกลางแนวนอน */
+    max-width: 100%; /* ป้องกันภาพล้นหน้าจอ */
+  }
+}
+/* Products */
+
+.product {
+  padding: 4rem 2rem;
+
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  h1 {
+    font-size: 5rem;
     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-maxwidth {
+    max-width: 2500px;
+    margin: 0 auto;
+  }
+}
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 5rem;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Product Card Styles */
+.product h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 1rem 0;
+}
+
+.product-card .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e74c3c;
+  margin-bottom: 1rem;
+}
+.card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+}
+
+.card-image img {
+  max-width: 100%;
+  height: auto;
+}
+.card-text {
+  padding: 16px;
+
+  text-align: center;
+}
+/* พื้นหลังจางๆ */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* กล่องเนื้อหาข้อมูล */
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 24px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+}
+
+/* ปุ่มปิด */
+.close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ข่าวสารและกิจกรรม */
+.news {
+  background-color: #f0f0f0;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.news-wrapper {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.news h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/* กล่องหลักของเนื้อหาข่าว */
+.news-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* ด้านซ้ายของเนื้อหา */
+.news-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  flex: 1;
+}
+
+.news-facebook-logo {
+  border-radius: 4rem;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 1rem;
+}
+
+.news-left h3 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: #4b4b4b;
+  text-align: center;
+}
+
+.news-left a {
+  margin-top: 0.5rem;
+  color: #1a0dab;
+  text-align: center;
+  word-break: break-word;
+  font-size: 1.1rem;
+}
+
+/* ด้านขวาของเนื้อหา */
+.news-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.news-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+/* ---------- Responsive ---------- */
+@media (min-width: 768px) {
+  .news-content {
+    flex-direction: row;
+  }
+
+  .news-left,
+  .news-right {
     align-items: center;
     justify-content: center;
   }
-  
-  /* ตัวรูปภาพ */
-  .icon-wrapper img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+
+  .news-left h3 {
+    font-size: 2.5rem;
   }
-  
- 
+
+  .news-left a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .news-left h3 {
+    font-size: 1.5rem;
+  }
+
+  .news-left a {
+    font-size: 1rem;
+  }
+
+  .news-image {
+    max-width: 100%;
+  }
+
+  .news-facebook-logo {
+    max-width: 100%;
+  }
+}
+
+/* Contact-us */
+.contact {
+  background-color: #f0f0f0;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-wrapper {
+  max-width: 1000px;
+  width: 100%;
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.contact-card {
+  background-color: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.facebook-cover {
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding-left: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* กล่องห่อ icon */
+.icon-wrapper {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ตัวรูปภาพ */
+.icon-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
