@@ -716,6 +716,11 @@ button {
   gap: 1rem;
   font-size: 1.5rem;
   color: #333;
+  a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
 
 /* กล่องห่อ icon */
