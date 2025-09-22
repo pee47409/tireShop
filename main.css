@@ -616,10 +616,19 @@ button {
 /* ด้านขวาของเนื้อหา */
 .news-right {
   flex: 1;
+  flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem;
+
+  p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #4b4b4b;
+    text-align: center;
+    font-weight: 500;
+  }
 }
 
 .news-image {
